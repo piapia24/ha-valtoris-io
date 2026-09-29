@@ -1,0 +1,14 @@
+{
+  "title": "Valtoris 8-Channel Ethernet I/O",
+  "config": {
+    "step": {"user": {"title": "Connect to Valtoris module", "description": "Add an 8CH-IO-ETH or 8CH-IO-LTE reachable over Modbus TCP.", "data": {"name": "Device name", "host": "IP address or hostname", "port": "Modbus TCP port", "unit_id": "Modbus unit ID", "ai_profile": "Analog input profile"}}},
+    "error": {"cannot_connect": "Could not read the module over Modbus TCP.", "invalid_unit_id": "Enter a number from 0 to 247."},
+    "abort": {"already_configured": "This module is already configured."}
+  },
+  "entity": {
+    "binary_sensor": {"di_1": {"name": "DI1"}, "di_2": {"name": "DI2"}, "di_3": {"name": "DI3"}, "di_4": {"name": "DI4"}, "di_5": {"name": "DI5"}, "di_6": {"name": "DI6"}, "di_7": {"name": "DI7"}, "di_8": {"name": "DI8"}},
+    "sensor": {"ai_1": {"name": "AI1"}, "ai_2": {"name": "AI2"}, "ai_3": {"name": "AI3"}, "ai_4": {"name": "AI4"}, "ai_5": {"name": "AI5"}, "ai_6": {"name": "AI6"}, "ai_7": {"name": "AI7"}, "ai_8": {"name": "AI8"}, "di_1_count": {"name": "DI1 counter"}, "di_2_count": {"name": "DI2 counter"}, "di_3_count": {"name": "DI3 counter"}, "di_4_count": {"name": "DI4 counter"}, "di_5_count": {"name": "DI5 counter"}, "di_6_count": {"name": "DI6 counter"}, "di_7_count": {"name": "DI7 counter"}, "di_8_count": {"name": "DI8 counter"}},
+    "switch": {"do_1": {"name": "DO1 relay"}, "do_2": {"name": "DO2 relay"}, "do_3": {"name": "DO3 relay"}, "do_4": {"name": "DO4 relay"}, "do_5": {"name": "DO5 relay"}, "do_6": {"name": "DO6 relay"}, "do_7": {"name": "DO7 relay"}, "do_8": {"name": "DO8 relay"}, "di_controls_do": {"name": "DI controls corresponding DO"}},
+    "select": {"ai_1_profile": {"name": "AI1 measurement range"}, "ai_2_profile": {"name": "AI2 measurement range"}, "ai_3_profile": {"name": "AI3 measurement range"}, "ai_4_profile": {"name": "AI4 measurement range"}, "ai_5_profile": {"name": "AI5 measurement range"}, "ai_6_profile": {"name": "AI6 measurement range"}, "ai_7_profile": {"name": "AI7 measurement range"}, "ai_8_profile": {"name": "AI8 measurement range"}}
+  }
+}

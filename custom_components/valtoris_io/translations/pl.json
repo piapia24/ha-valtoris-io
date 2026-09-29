@@ -1,0 +1,10 @@
+{
+  "title": "Valtoris 8-kanałowe I/O Ethernet",
+  "config": {"step": {"user": {"title": "Połącz z modułem Valtoris", "description": "Dodaj moduł 8CH-IO-ETH lub 8CH-IO-LTE dostępny przez Modbus TCP.", "data": {"name": "Nazwa urządzenia", "host": "Adres IP lub nazwa hosta", "port": "Port Modbus TCP", "unit_id": "Identyfikator Modbus", "ai_profile": "Profil wejść analogowych"}}}, "error": {"cannot_connect": "Nie można odczytać modułu przez Modbus TCP.", "invalid_unit_id": "Wpisz liczbę od 0 do 247."}, "abort": {"already_configured": "Ten moduł jest już skonfigurowany."}},
+  "entity": {
+    "binary_sensor": {"di_1": {"name": "DI1"}, "di_2": {"name": "DI2"}, "di_3": {"name": "DI3"}, "di_4": {"name": "DI4"}, "di_5": {"name": "DI5"}, "di_6": {"name": "DI6"}, "di_7": {"name": "DI7"}, "di_8": {"name": "DI8"}},
+    "sensor": {"ai_1": {"name": "AI1"}, "ai_2": {"name": "AI2"}, "ai_3": {"name": "AI3"}, "ai_4": {"name": "AI4"}, "ai_5": {"name": "AI5"}, "ai_6": {"name": "AI6"}, "ai_7": {"name": "AI7"}, "ai_8": {"name": "AI8"}, "di_1_count": {"name": "Licznik DI1"}, "di_2_count": {"name": "Licznik DI2"}, "di_3_count": {"name": "Licznik DI3"}, "di_4_count": {"name": "Licznik DI4"}, "di_5_count": {"name": "Licznik DI5"}, "di_6_count": {"name": "Licznik DI6"}, "di_7_count": {"name": "Licznik DI7"}, "di_8_count": {"name": "Licznik DI8"}},
+    "switch": {"do_1": {"name": "Przekaźnik DO1"}, "do_2": {"name": "Przekaźnik DO2"}, "do_3": {"name": "Przekaźnik DO3"}, "do_4": {"name": "Przekaźnik DO4"}, "do_5": {"name": "Przekaźnik DO5"}, "do_6": {"name": "Przekaźnik DO6"}, "do_7": {"name": "Przekaźnik DO7"}, "do_8": {"name": "Przekaźnik DO8"}, "di_controls_do": {"name": "DI steruje odpowiadającym DO"}},
+    "select": {"ai_1_profile": {"name": "Zakres AI1"}, "ai_2_profile": {"name": "Zakres AI2"}, "ai_3_profile": {"name": "Zakres AI3"}, "ai_4_profile": {"name": "Zakres AI4"}, "ai_5_profile": {"name": "Zakres AI5"}, "ai_6_profile": {"name": "Zakres AI6"}, "ai_7_profile": {"name": "Zakres AI7"}, "ai_8_profile": {"name": "Zakres AI8"}}
+  }
+}

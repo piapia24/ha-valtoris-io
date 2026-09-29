@@ -1,0 +1,11 @@
+{
+  "domain": "valtoris_io",
+  "name": "Valtoris 8-Channel Ethernet I/O",
+  "codeowners": ["@piapia24"],
+  "config_flow": true,
+  "documentation": "https://valtoris.com/product/8-channel-ethernet-remote-io-module/",
+  "issue_tracker": "https://github.com/piapia24/ha-valtoris-io/issues",
+  "iot_class": "local_polling",
+  "integration_type": "device",
+  "version": "0.1.6"
+}
